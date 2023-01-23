@@ -8,46 +8,37 @@ namespace DFECSharp
 {
     class Runner
     {
-           
-        public void DoY()
-        {
-            int x = 10; // Scope To this function
-        }
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-            Console.WriteLine("Hello World One");
-            Console.WriteLine("Hello World Two");
+            int win1 = 42, win2 = 1, win3 = 5, win4 = 49, win5 = 33, win6 = 34;   
+      
+            string lotteryNumbers = string.Format("The winning lottery numbers are {4}, {1}, {2}, {3}, {4}, {5}", win1, win2, win3, win4, win5, win6);      // 11)           
+            
+            string two = $"blah {win1}, {win2 + win3}"; // String literal
+            
+            Console.WriteLine(lotteryNumbers);
+            Console.WriteLine(two);
+
+            VariablesClass vc = new VariablesClass();
+
+            Console.WriteLine("|Y|");
+
+            vc.DoY();
+            vc.DoY();
+
+            Console.WriteLine("|Z|");
+
+            vc.DoZ();
+            vc.DoZ();
+            vc.DoZ();
+            vc.DoZ();
+
             Console.ReadLine();
+            // 0,1 0,1
+            // 1,2
 
-            // Whole Numbers
-            int int32 = 10; 
-            long bit64 = 99; 
-
-            // Decimal numbers
-            decimal digits16b = 0.1M;
-            double digits8b = 0.1;
-            float digitst4b = 0.1f;
-
-            string text = "Text";
-            char character = 'a';
-
-            bool boolean = true;
-
-            // An array
-            int[] array = new int[] {1,2,3,4,5};
-
-            array[4] = 5 + 1;
-            array[5] = 60;
-
-            // ArrayLists
-            List<int> lisst = new List<int>() {1,2,3,4,5};
-            lisst.Add(60);
-
-            // 2d array
-            int[][] d2array = new int[1][];
-            int[,] d2arrayJ = new int[1,1];
+            
 
         }
 
