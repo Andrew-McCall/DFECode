@@ -12,53 +12,31 @@ namespace DFECSharp
         public static void Main(string[] args)
         {
 
-            Person David = new Person("David", 20);
-            David.Hello();
-            David.Hello("McCall");
-           
-            Person Andrew = new Person("Andrew",18, "Male");
-            Andrew.Hello();
-            Andrew.Hello(David);
-            Console.WriteLine($"{Andrew.Gender} - {David.Gender}");
-
-            int x = 100;
-
-            while (x < 100)
-            {
-                Console.WriteLine(++x);
-            }
-
-            x = 100;
-            do
-            {
-                Console.WriteLine(++x);
-            } while (x < 100);
-
-            for (int i = 0; i < 100; i++)
-            {
-                Console.WriteLine(i);
-            }
-
+            Months currentMonth = Months.Jul;
+            Day today = (Day)5;
             
-            while (true)
-            {
-                Console.ReadLine();
-                // Logic 
+            Console.WriteLine(today);
 
-                // if allowed.
-                break;
+            if (currentMonth == Months.Jul)
+            {
+                Console.WriteLine("Jul");
+                Console.WriteLine(currentMonth);
             }
 
-            bool allowPass = false
-            while (!allowPass)
+            switch (currentMonth)
             {
-                Console.ReadLine();
-                // Logic 
+                case Months.Mar:
+                    Console.WriteLine("Mar");
+                    break;
 
-                // if allowed.
-                allowPass = true
+                case Months.Jun:
+                    Console.WriteLine("Jun");
+                    break;
             }
-            Console.ReadLine();
+
+
+            Console.ReadKey();
+
         }
 
     }
