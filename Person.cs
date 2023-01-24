@@ -25,13 +25,18 @@ namespace DFECSharp
             Console.WriteLine("New Person Created");
             this.LocalName = name;
             this.Age = age;
-
-            this.Gender = "N/A";
+            this.Gender = "Not Given";
         }
 
         private void Funny()
         {
             Console.WriteLine("A fish swam into a concrete wall, He said Dam!");
+        }
+
+        public void Hello(Person other) // Ext if/case you know this person (hardcoded) Say something special
+        {
+            Console.WriteLine($"Hello, {other.LocalName}. My name is {this.LocalName}");
+            Funny();
         }
 
         public void Hello(string name)
@@ -41,7 +46,7 @@ namespace DFECSharp
 
         public void Hello()
         {
-            Console.WriteLine(string.Format("Hello, {0}. I am {1} years old", this.LocalName, this.Age));
+            Console.WriteLine(string.Format("Hello my name is {0}. I am {1} years old", LocalName, Age));
         }
 
         public static bool Compare(string nameOne, string nameTwo)

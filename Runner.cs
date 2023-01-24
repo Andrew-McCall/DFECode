@@ -15,38 +15,49 @@ namespace DFECSharp
             Person David = new Person("David", 20);
             David.Hello();
             David.Hello("McCall");
-
+           
             Person Andrew = new Person("Andrew",18, "Male");
             Andrew.Hello();
+            Andrew.Hello(David);
             Console.WriteLine($"{Andrew.Gender} - {David.Gender}");
+
+            int x = 100;
+
+            while (x < 100)
+            {
+                Console.WriteLine(++x);
+            }
+
+            x = 100;
+            do
+            {
+                Console.WriteLine(++x);
+            } while (x < 100);
+
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(i);
+            }
+
             
-            //David.LocalName = "Not Andrew";
-            //David.HelloSelf();
+            while (true)
+            {
+                Console.ReadLine();
+                // Logic 
 
-            /// Make new class. 
+                // if allowed.
+                break;
+            }
 
+            bool allowPass = false
+            while (!allowPass)
+            {
+                Console.ReadLine();
+                // Logic 
 
-            // private void
-            //   - Console.WriteLine something funny
-
-            // public void
-            //   - Say's hello to a person saved privatley (string variable)
-
-
-            /// Run it from main. 
-            // ClassName name = new ClassName();
-            // name.property = x;
-            // name.SayHello();
-
-
-            /// Extension
-            // public static boolean
-            //   - Compare Two given names
-
-
-            /// Extension 2
-            // public function. public property (variable of the class). 
-
+                // if allowed.
+                allowPass = true
+            }
             Console.ReadLine();
         }
 
