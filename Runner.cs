@@ -12,28 +12,23 @@ namespace DFECSharp
         public static void Main(string[] args)
         {
 
-            Months currentMonth = Months.Jul;
-            Day today = (Day)5;
-            
-            Console.WriteLine(today);
+            IList<int> myArray = new int[5]; // Default is 0
+            IList<int> myList = new List<int>(5);
 
-            if (currentMonth == Months.Jul)
-            {
-                Console.WriteLine("Jul");
-                Console.WriteLine(currentMonth);
-            }
+            Console.WriteLine(myArray);
+            Console.WriteLine(myList);
 
-            switch (currentMonth)
-            {
-                case Months.Mar:
-                    Console.WriteLine("Mar");
-                    break;
+            /// 10Min break. 10:20
 
-                case Months.Jun:
-                    Console.WriteLine("Jun");
-                    break;
-            }
+            // Lists and Collections
 
+            // 2 Player Naughts and Crosses 
+            // List
+            // (Enum)
+            // Loops
+            // Logic - if/switch
+
+            // Prasing/Input
 
             Console.ReadKey();
 
